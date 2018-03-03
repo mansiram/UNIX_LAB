@@ -102,4 +102,50 @@ OUTPUT
 01-03-2018_t2
 01-03-2018_t3
 
+3.File related commands.
+ a)cp-used to copy contents of one file to another.
+ b)rm-used to remove file from the existing directory.
+ c)mv-used to renmae a file within the directory.
+ d)cmp-used to compare the contents of two files inside the directory.
+ e)diff-used to find the difference in the contents of two files existing within the directory.
+  f)comm-used to find the common contents between the two files within the directory.
+ 
+4.setting permission to the file or directory.
+ # create a sample file within a directory,then perform the following:
+  $chmod u+x sample
+  $ls -l sample
+  
+5.use of commands find and xargs?
+#the find command is used to find the file within a directory 
+#the xargs command is used to build and execute commmands from standard inputs.
+
+6.Grep with all possible options
+
+$ cat > sample
+Unix is a programming language that use commands
+unix is case sensitive
+It helps to perform multi task
+
+With "-i" option
+$ grep -i "unix" sample
+
+With "-v" option
+$ grep -v "unix" sample
+
+With "-n" option
+grep -n "unix" sample
+
+With "-c" option
+$ grep -c "unix" sample
+
+With "-l" option
+$ grep -l "unix" sample
+
+With "-e" option
+$ grep -e "unix" -e "Unix" sample
+
+With "-x" option
+$ grep -x "unix" sample 
+
+
 
