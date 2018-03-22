@@ -1,0 +1,13 @@
+
+1. From first 5 lines of the file replace  manager with directory
+
+Change the extension of the file from lst to txt format and perform the following sed command
+
+$ sed '1,5 s/Manager/Director/' emp.txt
+
+2.Develope a search engine to search for a word or a phrase in all or any file on your computer
+
+echo "enter the pattern to be searched"
+read n
+grep -r1 "$n" "/home"
+
