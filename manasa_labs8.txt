@@ -1,0 +1,19 @@
+1.Display the details of the employee whose designation is manager/Manager.
+
+$ sed -n '/[mM]anager/p' emp.lst
+
+* Use of sed command with different option
+
+2.$ sed -n '1,2p' emp.lst
+
+3.$ sed -n '$p' emp.lst
+
+4.$ sed -n -e '1,3p' -e '5,6p' -e '9,10p' emp.lst
+
+5.$ sed -n '/Manager/p' emp.lst
+
+6.$ sed -n '1,2!p' emp.lst
+
+7.$ sed 's/|/:/g' emp.lst
+
+
