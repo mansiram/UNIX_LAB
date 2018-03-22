@@ -1,0 +1,29 @@
+1.Print only the odd numbered lines of a file
+
+  $ awk 'NR%2!=0' emp1.lst
+
+2.Write a awk command to print the last field without knowing the number of feild lines.
+
+  $ awk -F "|" '{print $(NF)}' emp1.lst
+
+3.Equivalent awk command for the following
+
+a.$ head -n 5 emp1.lst
+
+  $ awk -F "|" 'NR==1,NR==5{print}' emp1.lst
+
+
+b.$ tail +6 emp1.lst
+
+  $ awk -F "|" 'NR==6,NR==11{print}' emp1.lst
+
+
+c.$ sed -n '5,10p' emp1.lst
+
+  $ awk -F "|" 'NR==5,NR==10{print}' emp1.lst
+
+4.Write a awk command to delete all blank lines
+ 
+  $ awk 'NF' emp1.lst
+
+
